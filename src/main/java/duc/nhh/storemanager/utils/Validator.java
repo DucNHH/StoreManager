@@ -16,7 +16,7 @@ public class Validator {
     }
 
     public static void checkPassword(String password) {
-        if (!Pattern.matches("[a-zA-Z\\d]+", password)) throw new InvalidInfoException("password");
+        if (!Pattern.matches("[a-z]{4}\\d{2}", password)) throw new InvalidInfoException("password");
     }
 
     public static void checkPermission(String permission) {
